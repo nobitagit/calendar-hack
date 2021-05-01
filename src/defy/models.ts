@@ -1,19 +1,8 @@
-export type Units = 'mi' | 'km'
-
 export const metersPerMile = 1609.344;
-
-export type RaceDistance = {
-    name: string,
-    distance: number,
-    worldRecord: number,
-    defaultTime: number,
-}
 
 function toSeconds(hours: number, minutes: number, seconds: number) {
     return hours * 60 * 60 + minutes * 60 + seconds;
 }
-
-export type RaceType = "Marathon" | "Half Marathon" | "5K" | "10K"
 
 export class Distance {
     private readonly _meters: number;
@@ -52,10 +41,6 @@ export const distances: { [key: string]: RaceDistance } = {
     "50K": { name: '50K', distance: 50000, worldRecord: toSeconds(2, 43, 38), defaultTime: toSeconds(3, 44, 59) }, // 2:43:38
 };
 
-export type Milestone = {
-    name: string,
-    distance: number,
-}
 export const milestones: Milestone[] = [
     { name: '10K', distance: 10000 },
     { name: '20K', distance: 20000 },

@@ -1,6 +1,4 @@
 import { createEvents, EventAttributes } from "ics"
-import { Units } from '../defy/models'
-import { RacePlan } from "./models";
 import { addDays } from 'date-fns'
 import { getWeekDistance, render, renderDist } from './rendering'
 

@@ -1,37 +1,5 @@
 import { fetchWithCache } from './utils';
-import { RaceType, Units } from '../defy/models'
-import { Tags } from './models';
 import { Config } from './config';
-
-export interface AvailablePlan {
-    url: string,
-    id: string,
-    name: string,
-    type: RaceType
-}
-
-export interface PlannedWorkout {
-    title: string;
-    description: string;
-    tags: Tags[];
-    distance: number;
-    units: Units;
-}
-
-export interface WeekSchedule {
-    description: string | undefined,
-    workouts: PlannedWorkout[], // guaranteed to be length 7
-}
-
-export interface TrainingPlan {
-    id: string,
-    name: string,
-    description: string,
-    units: Units,
-    type: RaceType,
-    schedule: WeekSchedule[],
-    source: string,
-}
 
 export const availablePlans: AvailablePlan[] = [
     { url: Config.plansPath + 'c25k.json', id: 'c25k', name: 'Couch to 5K', type: '5K' },

@@ -1,11 +1,8 @@
 import * as React from 'react'
-import { Units } from '../defy/models'
-import { RacePlan } from '../ch/models'
-import { dayOfWeek, key, Week } from '../ch/dategrid'
+import { key } from '../ch/dategrid'
 import { DayCell } from './DayCell'
 import { WeekSummary } from './WeekSummary'
 import { DayOfWeekHeader } from './DayOfWeekHeader'
-import { DayDetails } from '../ch/models'
 import styled from 'styled-components'
 import { format } from 'date-fns'
 

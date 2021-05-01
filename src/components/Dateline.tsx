@@ -1,9 +1,6 @@
 import * as React from 'react'
 import { format } from 'date-fns'
 import styled from 'styled-components'
-import { DayDetails } from '../ch/models'
-import { Units } from '../defy/models'
-
 
 export const DatelineStyle = styled.div`
   text-align: center;

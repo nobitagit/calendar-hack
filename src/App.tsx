@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Units } from './defy/models'
-import { RacePlan } from './ch/models';
-import { PlanRepo, availablePlans, availablePlansById, AvailablePlan } from './ch/planrepo';
+import { PlanRepo, availablePlans, availablePlansById } from './ch/planrepo';
 import { endOfWeek, addWeeks, isAfter } from 'date-fns';
-import { dayOfWeek } from './ch/dategrid'
 import { build, swap, swapDow } from './ch/planbuilder'
 import { CalendarGrid } from './components/CalendarGrid'
 import { ThemeProvider } from 'styled-components';
@@ -81,15 +78,13 @@ const App: React.FC = () => {
 
   useEffect(() => {
     initialLoad(selectedPlan, planEndDate, selectedUnits);
-  }, []);
-
-  const [, forceUpdate] = React.useReducer((x) => x + 1, 0);
-  React.useEffect(() => {
     // listen for changes to the URL and force the app to re-render
     history.listen(() => {
       forceUpdate();
     });
   }, []);
+
+  const [, forceUpdate] = React.useReducer((x) => x + 1, 0);
 
   const getParams = (units: Units, plan: AvailablePlan, date: Date) => {
     return {

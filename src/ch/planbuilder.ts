@@ -1,9 +1,6 @@
 import { eachDayOfInterval } from 'date-fns'
 import { calcPlanDates } from './datecalc'
-import { DateGrid, dayOfWeek } from './dategrid'
-import { TrainingPlan, PlannedWorkout } from './planrepo'
-import { RacePlan, DayDetails } from './models'
-import { Units } from '../defy/models'
+import { DateGrid } from './dategrid'
 
 function renderDayDetails(date: Date, sourceUnits: Units, plannedWorkout: PlannedWorkout | undefined): DayDetails | undefined {
     if (plannedWorkout) {

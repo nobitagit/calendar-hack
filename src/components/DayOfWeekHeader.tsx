@@ -1,6 +1,5 @@
 import * as React from 'react'
 import styled from 'styled-components'
-import { dayOfWeek } from '../ch/dategrid'
 import { DragHandle } from './DragHandle'
 import { useDrop, useDrag, DragSourceMonitor } from 'react-dnd'
 import ItemTypes from '../ch/ItemTypes'

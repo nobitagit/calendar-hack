@@ -4,7 +4,6 @@ import { IconContext } from 'react-icons'
 import { useContext } from 'react';
 import { ThemeContext } from 'styled-components';
 import { Radio } from './Radios';
-import { Units } from '../models'
 
 interface Props {
     units: Units,

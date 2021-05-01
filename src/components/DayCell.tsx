@@ -1,6 +1,4 @@
 import * as React from 'react'
-import { Units } from '../defy/models'
-import { DayDetails } from '../ch/models'
 import { useDrop } from 'react-dnd'
 import ItemTypes from '../ch/ItemTypes'
 import { WorkoutCard } from './WorkoutCard'

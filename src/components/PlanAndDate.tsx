@@ -1,9 +1,7 @@
 import React from 'react';
 import styled from 'styled-components'
 import { DateControl } from './DateControl';
-import { Units } from '../defy/models'
 import PlanPicker from './PlanPicker'
-import { AvailablePlan } from '../ch/planrepo'
 
 interface Props {
     units: Units,

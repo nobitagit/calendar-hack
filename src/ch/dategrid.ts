@@ -2,11 +2,7 @@ import { format, isWithinInterval, eachDayOfInterval, differenceInWeeks, isBefor
 import { startOfWeek, startOfDay, endOfWeek, isMonday, isTuesday, isWednesday, isThursday, isFriday, isSaturday, isSunday } from 'date-fns'
 import { AssertionError } from 'assert';
 
-export type dayOfWeek = 'Monday' | 'Tuesday' | 'Wednesday' | 'Thursday' | 'Friday' | 'Saturday' | 'Sunday';
 export const key = (d: Date) => format(d, 'yyyy/MM/dd');
-
-export interface Day<T> { date: Date, event: T | undefined }
-export interface Week<T> { weekNum: number, dist: number, desc: string, days: Day<T>[] }
 
 // A grid of dates. Always represents one or more contiguous weeks.
 // Each week is Monday through Sunday currently.

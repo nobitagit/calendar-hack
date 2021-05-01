@@ -1,5 +1,4 @@
 import React from 'react'
-import { Units } from '../defy/models'
 import { ControlCard, ControlTitle } from './ControlCard'
 
 interface Props {

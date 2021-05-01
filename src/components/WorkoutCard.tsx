@@ -1,6 +1,4 @@
 import React from 'react'
-import { Units } from '../defy/models'
-import { DayDetails } from '../ch/models'
 import { render } from '../ch/rendering'
 import { Card, Content } from './WorkoutUx'
 import { Dateline } from './Dateline'

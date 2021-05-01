@@ -1,7 +1,5 @@
 import * as React from 'react'
-import { Week, dayOfWeek, key } from '../ch/dategrid'
-import { Units } from '../defy/models'
-import { DayDetails, RacePlan } from '../ch/models'
+import { key } from '../ch/dategrid'
 import { format } from 'date-fns'
 import { DayCell } from './DayCell'
 

@@ -1,6 +1,5 @@
 import * as React from 'react'
 import styled from 'styled-components'
-import { RacePlan } from '../ch/models'
 
 const Root = styled.div`
     display: flex;

@@ -1,7 +1,4 @@
 import * as React from 'react'
-import { Week } from '../ch/dategrid'
-import { Units } from '../defy/models'
-import { DayDetails, RacePlan } from '../ch/models'
 import styled from 'styled-components'
 import { renderDist, miToKm, getWeekDistance } from '../ch/rendering'
 import StartIcon from '../svg/icons02/start.svg'
